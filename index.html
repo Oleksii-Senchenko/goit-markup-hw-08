@@ -24,7 +24,6 @@
     />
     <!-- STYLEs -->
     <link rel="stylesheet" href="./css/main.min.css" />
-    <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
     <header class="header">
@@ -35,10 +34,15 @@
           rel="noopener noreferer nofollow"
           href="index.html"
         >
-          <!-- ОПЯТЬ В СПАНЕ НЕ ПОНЯТНО ЧТО ДЕЛАТЬ -->
           Web<span class="logo__dark">Studio</span>
         </a>
-        <!-- ТУТ СТОЛБНЯК Я НЕ РАЗОБРАЛСЯ!!!!!!!!!!! В ЛИНКАХ -->
+
+        <button class="menu-btn">
+          <svg width="40" height="40">
+            <use></use>
+          </svg>
+        </button>
+
         <nav class="nav">
           <ul class="nav__list">
             <li class="nav__item">
@@ -73,6 +77,7 @@
             </li>
           </ul>
         </nav>
+
         <ul class="contacts__list">
           <li class="contacts__item">
             <a
@@ -105,7 +110,6 @@
     </header>
 
     <main>
-      <!-- banner section -->
       <section class="banner">
         <div class="container">
           <h1 class="section__title">Эффективные решения для вашего бизнеса</h1>
@@ -114,7 +118,7 @@
           </button>
         </div>
       </section>
-      <!-- info section -->
+
       <section class="info">
         <div class="container">
           <ul class="info__list">
@@ -169,7 +173,7 @@
           </ul>
         </div>
       </section>
-      <!-- business section -->
+
       <section class="business">
         <div class="container">
           <h2 class="section__title">Чем мы занимаемся</h2>
@@ -204,18 +208,60 @@
           </ul>
         </div>
       </section>
-      <!-- team section -->
+
       <section class="team">
         <div class="container">
           <h2 class="section__title">Наша команда</h2>
           <ul class="team__list">
+
+
+
+
+
+
+
+
+
+
+
+
             <li class="team__item">
+
+
+
+
+
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="./images/team/hum1.jpg"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="./images/team/team_tab1@xjpg 1x
+                          ./images/team/team_tab2@xjpg 2x"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                  ./images/team/team_mob1@xjpg 1x
+                  ./images/team/team_mob1@xjpg 2x"
+                />
               <img
                 class="team__img"
                 src="./images/team/hum1.jpg"
                 width="270"
                 alt="Игорь Демьяненко Product Designer"
               />
+              </picture>
+
+
+
+
+
+
+
+             
               <div class="team-wrapper">
                 <h3 class="team__name">Игорь Демьяненко</h3>
                 <p class="position">Product Designer</p>
@@ -252,6 +298,30 @@
               </div>
             </li>
             <li class="team__item">
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="./images/team/hum2.jpg"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="./images/team/team_tab2@xjpg 1x
+                          ./images/team/team_tab2@xjpg 2x"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                  ./images/team/team_mob2@xjpg 1x
+                  ./images/team/team_mob2@xjpg 2x"
+                />
+              <img
+                class="team__img"
+                src="./images/team/hum1.jpg"
+                width="270"
+                alt="Игорь Демьяненко Product Designer"
+              />
+              </picture>
+
               <img
                 class="team__img"
                 src="./images/team/hum2.jpg"
@@ -294,12 +364,30 @@
               </div>
             </li>
             <li class="team__item">
-              <img
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="./images/team/hum3.jpg"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="./images/team/team_tab3@xjpg 1x
+                          ./images/team/team_tab3@xjpg 2x"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                  ./images/team/team_mob3@xjpg 1x
+                  ./images/team/team_mob3@xjpg 2x"
+                />
+                <img
                 class="team__img"
                 src="./images/team/hum3.jpg"
                 width="270"
                 alt="Николай Тарасов Marketing"
               />
+              </picture>
+              
               <div class="team-wrapper">
                 <h3 class="team__name">Николай Тарасов</h3>
                 <p class="position">Marketing</p>
@@ -336,6 +424,30 @@
               </div>
             </li>
             <li class="team__item">
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="./images/team/hum3.jpg"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="./images/team/team_tab4@xjpg 1x
+                          ./images/team/team_tab4@xjpg 2x"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                  ./images/team/team_mob4@xjpg 1x
+                  ./images/team/team_mob4@xjpg 2x"
+                />
+                <img
+                class="team__img"
+                src="./images/team/hum4.jpg"
+                width="270"
+                alt="Михаил Ермаков UI Designer"
+              />
+              </picture>
+
               <img
                 class="team__img"
                 src="./images/team/hum4.jpg"
@@ -381,7 +493,7 @@
           </ul>
         </div>
       </section>
-      <!-- clients section -->
+
       <section class="clients">
         <div class="container">
           <h2 class="section__title">Постоянные клиенты</h2>
@@ -465,7 +577,6 @@
 
     <footer class="footer">
       <div class="container footer-container">
-        <!-- footer address -->
         <div class="footer-address">
           <a
             class="logo link"
@@ -473,7 +584,6 @@
             rel="noopener noreferer nofollow"
             href="index.html"
           >
-            <!-- ТУТ ТОЖЕ ЗАТУП С КЛАССОМ В СПАНЕ!!!! -->
             Web<span class="logo__light">Studio</span>
           </a>
           <address class="address">
@@ -501,7 +611,6 @@
           </address>
         </div>
 
-        <!-- footer socials -->
         <div class="footer-wrapper">
           <h2 class="footer-title">присоединяйтесь</h2>
           <ul class="socials">
@@ -536,19 +645,16 @@
           </ul>
         </div>
 
-        <!-- footer form -->
         <div class="footer-form">
           <h2 class="footer-title">ПОДПИШИТЕСЬ НА РАССЫЛКУ</h2>
           <form class="form-footer">
-            <label class="lable-footer">
-              <input
-                class="input-footer"
-                type="email"
-                placeholder="E-mail"
-                name="user-name"
-                required
-              />
-            </label>
+            <input
+              class="input-footer"
+              type="email"
+              placeholder="E-mail"
+              name="user-name"
+              required
+            />
             <button class="modal-footer-button" type="submit">
               Подписаться
               <svg class="svg-modal-button">

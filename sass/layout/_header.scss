@@ -1,5 +1,9 @@
 .header {
     border-bottom: 1px solid #ececec;
+    display: none;
+  @media screen and (min-width: 768px) {
+    display: flex;
+   }
 }
 .header-container {
     display: flex;
