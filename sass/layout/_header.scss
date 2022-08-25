@@ -1,15 +1,18 @@
 .header {
-    border-bottom: 1px solid #ececec;
-    display: none;
+  border-bottom: 1px solid #ececec;
   @media screen and (min-width: 768px) {
     display: flex;
-   }
+  }
+  @media screen and (max-width: 767px) {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
 }
+
 .header-container {
-    display: flex;
-    align-items: center;
-    gap: 93px;
-    font-weight: 500;
-    line-height: 1.14;
-    letter-spacing: 0.02em;
+  display: flex;
+  align-items: center;
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
 }
