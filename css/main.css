@@ -429,6 +429,85 @@ textarea {
   color: var(--blue-color);
 }
 
+.modal {
+  padding: 40px;
+}
+
+.modal-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+/* .modal-form__title {
+  margin-bottom: 12px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: calc(23 / 20);
+  text-align: center;
+  color: var(--black-color);
+} */
+.modal-form__group {
+  position: relative;
+  margin-bottom: 10px;
+}
+
+.modal-form__lable {
+  display: block;
+  margin-bottom: 4px;
+  width: 25px;
+  height: 14px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.1666666667;
+  letter-spacing: 0.01em;
+  color: var(--gray-color);
+}
+
+.modal-form__input {
+  width: 448px;
+  height: 40px;
+  outline: none;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  padding: 15px;
+  padding-left: 42px;
+}
+
+.modal-form__input:focus {
+  border: 1px solid #2196f3;
+}
+
+.modal-form__input:focus + .icon-modal__name {
+  fill: var(--blue-color);
+}
+
+/*
+Селектор сусіднього елемента 
+коли у input є знизу елемент svg,
+застосувати до svg червоний колір фону
+*/
+/* input + svg {
+  background-color: red;
+} */
+.modal-form__agreement {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 30px;
+  margin-top: 20px;
+}
+
 .menu-btn {
   margin-left: auto;
   width: 40px;
